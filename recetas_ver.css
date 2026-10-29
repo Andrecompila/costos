@@ -1,0 +1,75 @@
+/* ==========================================
+   ESTILOS MEJORADOS: VISTA Y COSTOS DE RECETAS
+   ========================================== */
+
+.receta-detalle-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.receta-hero-img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    margin-bottom: 15px;
+}
+
+.rendimiento-bar {
+    background: #fff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.rendimiento-form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.summary-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.stat-card-blue { background: #e3f2fd; padding: 15px; border-radius: 8px; text-align: center; }
+.stat-card-blue span { font-size: 11px; color: #0d47a1; font-weight: bold; display: block; }
+.stat-card-blue h3 { margin: 5px 0 0 0; color: #0d47a1; font-size: 20px; }
+
+.stat-card-yellow { background: #fff8e1; padding: 15px; border-radius: 8px; text-align: center; }
+.stat-card-yellow span { font-size: 11px; color: #f57f17; font-weight: bold; display: block; }
+.stat-card-yellow h3 { margin: 5px 0 0 0; color: #f57f17; font-size: 20px; }
+
+.stat-card-green { background: #e8f5e9; padding: 15px; border-radius: 8px; text-align: center; }
+.stat-card-green span { font-size: 11px; color: #1b5e20; font-weight: bold; display: block; }
+.stat-card-green h3 { margin: 5px 0 0 0; color: #1b5e20; font-size: 20px; }
+
+.stat-card-purple { background: #f3e5f5; padding: 15px; border-radius: 8px; text-align: center; }
+.stat-card-purple span { font-size: 11px; color: #4a148c; font-weight: bold; display: block; }
+.stat-card-purple h3 { margin: 5px 0 0 0; color: #4a148c; font-size: 20px; }
+
+.ingrediente-form-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr 1fr;
+    gap: 12px;
+    align-items: end;
+}
+
+.text-rendimiento-val {
+    color: #0d47a1;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.acciones-col {
+    text-align: center;
+}

@@ -1,0 +1,18 @@
+/* ==========================================
+   ESTILOS ESPECÍFICOS: MÓDULO DE PARÁMETROS
+   ========================================== */
+
+.param-input {
+    padding: 6px 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    width: 120px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.param-input:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}

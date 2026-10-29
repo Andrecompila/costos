@@ -1,0 +1,276 @@
+/* ==========================================
+   ESTILOS MODERNOS Y SUAVES - SISTEMA DE COSTOS
+   ========================================== */
+
+/* 1. Definición de Variables de Color */
+:root {
+    /* Modo Claro (Default) */
+    --bg-body: #f8f9fa;
+    --text-body: #333333;
+    --bg-sidebar: #1e293b;
+    --text-sidebar: #ffffff;
+    --sidebar-link: #94a3b8;
+    --sidebar-link-hover-bg: rgba(255, 255, 255, 0.08);
+    --sidebar-link-hover-color: #fff;
+    --user-info-bg: #334155;
+    --user-info-border: rgba(255, 255, 255, 0.05);
+    
+    --text-heading: #1e293b;
+    --bg-card: #ffffff;
+    --border-color: #f1f5f9;
+    --input-bg: #ffffff;
+    --input-border: #cbd5e1;
+    --input-text: #333333;
+    --label-color: #475569;
+    
+    --th-bg: #f8fafc;
+    --th-color: #475569;
+    --tr-hover: #f8fafc;
+    --box-shadow: rgba(0, 0, 0, 0.03);
+}
+
+/* Modo Oscuro */
+[data-theme="dark"] {
+    --bg-body: #0f172a;
+    --text-body: #f1f5f9;
+    --bg-sidebar: #090d16;
+    --text-sidebar: #f8fafc;
+    --sidebar-link: #94a3b8;
+    --sidebar-link-hover-bg: rgba(255, 255, 255, 0.08);
+    --sidebar-link-hover-color: #fff;
+    --user-info-bg: #1e293b;
+    --user-info-border: rgba(255, 255, 255, 0.1);
+    
+    --text-heading: #f8fafc;
+    --bg-card: #1e293b;
+    --border-color: #334155;
+    --input-bg: #0f172a;
+    --input-border: #475569;
+    --input-text: #f1f5f9;
+    --label-color: #94a3b8;
+    
+    --th-bg: #1e293b;
+    --th-color: #cbd5e1;
+    --tr-hover: #334155;
+    --box-shadow: rgba(0, 0, 0, 0.3);
+}
+
+/* 2. Estilos Globales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: var(--bg-body);
+    color: var(--text-body);
+    display: flex;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Menú Lateral (Sidebar) Moderno */
+.sidebar {
+    width: 260px;
+    background: var(--bg-sidebar);
+    color: var(--text-sidebar);
+    height: 100vh;
+    padding: 24px 20px;
+    position: fixed;
+    box-sizing: border-box;
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s ease;
+}
+
+.sidebar h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--text-sidebar);
+    font-weight: 600;
+}
+
+.user-info {
+    font-size: 13px;
+    background: var(--user-info-bg);
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    text-align: center;
+    border: 1px solid var(--user-info-border);
+    transition: background-color 0.3s ease;
+}
+
+.sidebar a {
+    display: block;
+    color: var(--sidebar-link);
+    text-decoration: none;
+    padding: 12px 16px;
+    margin-bottom: 6px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+}
+
+.sidebar a:hover {
+    background: var(--sidebar-link-hover-bg);
+    color: var(--sidebar-link-hover-color);
+    transform: translateX(4px);
+}
+
+.sidebar a.active {
+    background: #2563eb;
+    color: white;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+.btn-logout {
+    background: #dc2626 !important;
+    margin-top: 40px;
+    text-align: center;
+    color: white !important;
+}
+.btn-logout:hover {
+    background: #b91c1c !important;
+}
+
+/* Contenido Principal */
+.content {
+    margin-left: 260px;
+    padding: 40px;
+    width: calc(100% - 260px);
+    box-sizing: border-box;
+}
+
+h1, h2 {
+    color: var(--text-heading);
+    font-weight: 600;
+    margin-top: 0;
+    transition: color 0.3s ease;
+}
+
+/* Tarjetas y Contenedores */
+.card, form {
+    background: var(--bg-card);
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px var(--box-shadow);
+    border: 1px solid var(--border-color);
+    margin-bottom: 25px;
+    transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Inputs y Selects modernos */
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid var(--input-border);
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color: var(--input-bg);
+    color: var(--input-text);
+    transition: border-color 0.2s, box-shadow 0.2s, background-color 0.3s ease, color 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+    outline: none;
+}
+
+label {
+    font-size: 14px;
+    color: var(--label-color);
+    margin-bottom: 6px;
+    display: block;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+/* Tablas profesionales y suaves */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background: var(--bg-card);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px var(--box-shadow);
+    border: 1px solid var(--border-color);
+    margin-top: 20px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+th, td {
+    padding: 14px 16px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+th {
+    background-color: var(--th-bg);
+    color: var(--th-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+tr:hover {
+    background-color: var(--tr-hover);
+    transition: background-color 0.15s ease-in-out;
+}
+
+/* Botones modernos con efecto hover */
+.btn {
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    display: inline-block;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn-success { background: #16a34a; color: white; }
+.btn-success:hover { background: #15803d; }
+
+.btn-danger { background: #dc2626; color: white; }
+.btn-danger:hover { background: #b91c1c; }
+
+.btn-warning { background: #f59e0b; color: #fff; }
+.btn-warning:hover { background: #d97706; }
+
+.btn-secondary { background: #64748b; color: white; }
+.btn-secondary:hover { background: #475569; }
+
+/* Barra de Rendimiento y Porciones (Forzada) */
+.rendimiento-bar {
+    background-color: var(--bg-card) !important;
+    color: var(--text-heading) !important;
+    border: 1px solid var(--border-color) !important;
+    padding: 20px !important;
+    border-radius: 12px !important;
+    box-shadow: 0 4px 15px var(--box-shadow) !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+    gap: 15px !important;
+    margin-bottom: 25px !important;
+}
+
+/* Asegurar que el texto interno también sea legible en modo oscuro */
+.rendimiento-bar span, 
+.rendimiento-bar label {
+    color: var(--text-heading) !important;
+}

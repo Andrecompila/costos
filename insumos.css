@@ -1,0 +1,37 @@
+/* ==========================================
+   ESTILOS ESPECÍFICOS: MÓDULO DE INSUMOS
+   ========================================== */
+
+.insumos-form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.insumo-img-mini {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 4px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.insumo-checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.insumo-acciones-col {
+    text-align: center;
+}
+
+.btn-accion {
+    padding: 5px 10px;
+    font-size: 12px;
+    text-decoration: none;
+    border-radius: 4px;
+    display: inline-block;
+    margin-right: 4px;
+}

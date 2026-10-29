@@ -1,0 +1,43 @@
+/* ==========================================
+   ESTILOS ESPECÍFICOS: MÓDULO DE CATEGORÍAS
+   ========================================== */
+
+.categorias-form-grid {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr auto;
+    gap: 15px;
+    align-items: end;
+}
+
+.badge-receta {
+    background: #e3f2fd;
+    color: #0d47a1;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.badge-insumo {
+    background: #e8f5e9;
+    color: #1b5e20;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.categoria-acciones-col {
+    text-align: center;
+}
+
+.btn-accion {
+    padding: 6px 12px;
+    font-size: 12px;
+    text-decoration: none;
+    border-radius: 6px;
+    display: inline-block;
+    margin-right: 4px;
+}
